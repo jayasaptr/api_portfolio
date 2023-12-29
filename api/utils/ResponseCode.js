@@ -1,0 +1,32 @@
+'use_strict'
+
+const status_code = class status_code {
+  // module.exports = {
+  static STATUS_OK = 2000
+  static STATUS_DATA_NOT_FOUND = 4004
+  static STATUS_BAD_CREDENTIAL = 4011
+  static STATUS_UNKNOWN_ERROR = 2001
+  static STATUS_BAD_REQUEST = 4000
+  static STATUS_ROUTE_NOT_FOUND = 4004
+  static STATUS_TOKEN_INVALID = 3000
+  static STATUS_TOKEN_ANAUTHORIZED = 4001
+  static STATUS_TOKEN_EXPIRED = 3001
+  static STATUS_FORBIDEN_ACCESS = 3002
+  static STATUS_DATA_NOT_IN_RELATION = 3003
+  static STATUS_DATA_CONFLICT = 4009
+  static STATUS_GLOBAL_ERROR = 5000
+
+  static CODE_OK = 200
+  static CODE_BAD_CREDENTIAL = 401
+  static CODE_BAD_REQUEST = 400
+  static CODE_ROUTE_NOT_FOUND = 404
+  static CODE_TOKEN_INVALID = 300
+  static CODE_TOKEN_EXPIRED = 301
+  static CODE_FORBIDEN_ACCESS = 302
+  static CODE_DATA_NOT_IN_RELATION = 303
+  static CODE_DATA_CONFLICT = 409
+  static CODE_GLOBAL_ERROR = 500
+  static CODE_TOKEN_ANAUTHORIZED = 401
+}
+
+module.exports = status_code
